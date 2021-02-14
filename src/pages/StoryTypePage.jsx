@@ -10,7 +10,7 @@ const StoryType = () => {
 	return (
 		<>
 			<Loader show={isLoading}>Loading...</Loader>
-			<Stories storyIds={storyIds} />
+			{!isLoading && <Stories storyIds={storyIds} />}
 		</>
 	);
 };
