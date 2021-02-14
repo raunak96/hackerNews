@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 - ## Used useQuery and useQueries (for parallel fetching) hook of [react-query library](https://react-query.tanstack.com/) for fetching data.
-- ## Will Add Loader Overlay using ```ReactDOM.createPortal``` which provides a first-class way to render children into a DOM node that exists outside the DOM hierarchy of the parent component in this case our main React Application.
+- ## Added Loader Overlay using ```ReactDOM.createPortal``` which provides a first-class way to render children into a DOM node that exists outside the DOM hierarchy of the parent component in this case our main React Application.
     - In [index.html](public/index.html), **root** is main React Application, **loader** is for Loader component.
     - Using this we can get Loader outside our React Application, so while it is open user won't be able to interact with main Application.
 
