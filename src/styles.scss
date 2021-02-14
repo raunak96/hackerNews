@@ -45,7 +45,9 @@ h1 {
 		color: #fff;
 	}
 }
-
+.text-warning {
+	color: $base-text-color !important;
+}
 .loader-open {
 	overflow: hidden;
 }

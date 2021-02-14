@@ -1,4 +1,5 @@
 import React from "react";
+import { Spinner } from "react-bootstrap";
 import useGetAllStoryDetails from "../hooks/useGetAllStoryDetails";
 import Story from "./Story";
 
@@ -9,6 +10,7 @@ const Stories = ({ storyIds }) => {
 			{storyDetailsQuery.map(({ data: story, isLoading }, index) =>
 				isLoading ? (
 					<p className="loading" key={index}>
+						<Spinner animation="grow" size="sm" variant="warning" />
 						Loading...
 					</p>
 				) : (
